@@ -203,7 +203,7 @@ int main(int argc, char** argv) {
     pmf.setMaxDistance(params.max_distance);
 
     pcl::PointIndicesPtr ground_indices(new pcl::PointIndices);
-    pmf.extract(ground_indices); // 地面のインデックスを取得
+    pmf.extract(ground_indices->indices); // 地面のインデックスを取得
 
     // 地面とそれ以外（障害物）を分離
     pcl::ExtractIndices<pcl::PointXYZ> extract;
