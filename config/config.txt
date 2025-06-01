@@ -1,0 +1,9 @@
+# config/config.txt
+# ProgressiveMorphologicalFilter Parameters
+max_window_size = 33
+slope = 1.0
+initial_distance = 0.15
+max_distance = 3.0
+
+# Downsampling Parameters
+voxel_leaf_size = 0.1
